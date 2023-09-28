@@ -46,7 +46,7 @@
             </section>
         </div>
         <div class="row">
-            <footer class="btn btn-gray">Компания &copy;Diplom. Все права защищены. </footer>
+            <footer class="btn btn-gray">Компания &copy;Diplom. Все права защищены. для прверки гитААААААА </footer>
         </div>
     </body>
 </html>
