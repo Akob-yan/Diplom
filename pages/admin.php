@@ -8,7 +8,7 @@
         
         
         connect();
-        $sel='select * from questions';
+        $sel='select * from question';
         $res= mysql_query($sel);
         echo '<form action="index.php?page=4" method="post" class="input-group" id="formquestion">';
         echo '<table class="table table-striped">';
@@ -30,7 +30,7 @@
         if(isset($_POST['addquestion'])){
             $question=trim(htmlspecialchars($_POST['question']));
 //            if($country="") exit();
-            $ins='insert into questions(question) values("'.$question.'")';
+            $ins='insert into question(question) values("'.$question.'")';
             mysql_query($ins);
             echo "<script>";
             echo "window.location=document.URL;";
@@ -40,7 +40,7 @@
             foreach($_POST as $k => $v){
                 if(substr($k,0,2)=="cb"){
                     $idc=substr($k,2);
-                    $del='delete from questions where id='.$idc;
+                    $del='delete from question where id='.$idc;
                     mysql_query($del);
                 }
             }
@@ -51,7 +51,6 @@
         ?>
     </div>
     
-
 
 
 

@@ -1,3 +1,4 @@
+<!--
       <?php
         if(isset($_SESSION['radmin'])){
             if($page==6)
@@ -6,6 +7,7 @@
                 echo '<li class="'.$c.'"><a href="index.php?page=6">Private</a></li>';
         }
         ?>
+-->
        
 <div class="menu">
        
