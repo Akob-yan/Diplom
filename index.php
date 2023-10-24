@@ -25,13 +25,6 @@
                 <?php
                     if(isset($_GET['page'])){
                         $page = $_GET['page'];
-//                        if($page==1){
-//                        include_once("pages/tours.php");
-//                        }
-//                        if($page==2){
-//                        include_once("pages/comments.php");
-//                        }
-                        
                         if($page==3){
                         include_once("pages/registration.php");
                         }

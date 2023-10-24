@@ -1,12 +1,6 @@
 <div class="row">
     <div class="col-sm-6 col-md-6 col-lg-6 left">
         <?php
-//        if(!isset($_SESSION['radmin'])){
-//            echo "<h3/><span style='color:red;'>For Administrator Only!</span><h3/>";
-//        return false;
-//        }
-        
-        
         connect();
         $min = 0;
         $max = 2;
@@ -19,32 +13,26 @@
             echo '<tr>';
             echo '<td>'.$row[0].'</td>';
             echo '<td>'.$row[1].'</td>';
-//            echo '<td><input type="checkbox" name="cb'.$row[0].'"></td>';
             echo '</tr>';
         }
         echo '</table>';
         mysql_free_result($res);
         echo '<input type="text" name="question" placeholder="Question">';
         echo '<input type="submit" name="addquestion" value="Add" class="btn btn-sm btn-info">';
-//        echo '<input type="submit" name="delquestion" value="Delete" class="btn btn-sm btn-warning">';
         echo '</form>';
         ?>
         <?php
         if(isset($_POST['addquestion'])){
             $question=trim(htmlspecialchars($_POST['question']));
-//            if($country="") exit();
-//            $ins='insert into question(question) values("'.$question.'")';
             $ins='select answer from question where id='.$random;
-            
             $answer = mysql_query($ins);
             $answer2=mysql_fetch_array($answer, MYSQL_NUM);
-//            echo $answer2[0];
             if($question == $answer2[0]){
                 echo "<p style='color:green'>Правильно</p>";
             }else{
                 echo "<p style='color:red'>НЕ правильно</p>";
             }
-            echo '<input type="submit"  value="Next Question">';
+            echo '<input type="submit"  value="Next Question" style="color:green">';
                 
                 
 //            echo "<script>";
