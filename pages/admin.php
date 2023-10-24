@@ -17,7 +17,7 @@
         }
         echo '</table>';
         mysql_free_result($res);
-        echo '<input type="text" name="question" placeholder="Question">';
+        echo '<input type="text" name="question" placeholder="Answer">';
         echo '<input type="submit" name="addquestion" value="Add" class="btn btn-sm btn-info">';
         echo '</form>';
         ?>
@@ -32,25 +32,15 @@
             }else{
                 echo "<p style='color:red'>НЕ правильно</p>";
             }
-            echo '<input type="submit"  value="Next Question" style="color:green">';
+            echo '<input type="reset" value="Следующий вопрос" onclick="window.location.reload()" style="color:green">';
+            
+            
                 
                 
 //            echo "<script>";
 //            echo "window.location=document.URL;";
 //            echo "</script>";
         }
-//        if(isset($_POST['delquestion'])){
-//            foreach($_POST as $k => $v){
-//                if(substr($k,0,2)=="cb"){
-//                    $idc=substr($k,2);
-//                    $del='delete from question where id='.$idc;
-//                    mysql_query($del);
-//                }
-//            }
-//            echo "<script>";
-//            echo "window.location=document.URL;";
-//            echo "</script>";
-//        }
         ?>
     </div>
     

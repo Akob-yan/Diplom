@@ -4,8 +4,8 @@
 
         echo '</select>';
         echo '</select>';
-        echo '<input type="text" name="question" placeholder="Question">';
-        echo '<input type="text" name="answer" placeholder="Answer">';
+        echo '<input type="text" name="question" placeholder="Вопрос">';
+        echo '<input type="text" name="answer" placeholder="Ответ">';
         echo '<input type="submit" name="addquestion" value="Добавить" class="btn btn-sm btn-info">';
         echo '</form>';
 //        mysql_free_result($res);
@@ -15,9 +15,9 @@
             $answer=trim(htmlspecialchars($_POST['answer']));
             echo $question;
             echo $answer;
-            echo "<script>";
-            echo "console.log('srabotalo')";
-            echo "</script>";
+//            echo "<script>";
+//            echo "console.log('srabotalo')";
+//            echo "</script>";
             
             
 //            echo "<script>";
