@@ -38,11 +38,7 @@
                 ?>
             </section>
         </div>
-        <div class="row">
-            <footer class="btn btn-gray">Компания &copy;Diplom. Все права защищены.</footer>
-        </div>
-    </body>
-</html>
+        
 
 
 
